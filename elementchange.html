@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>change the list</title>
+</head>
+<body>
+    <h3>the list will change after you click</h3>
+    <ul type="square">
+        <li id="g1">good morning</li>
+        <li id="g2">good afternoon</li>
+    </ul>
+    <p>write in the below box what you want to change in the first option</p>
+    <input type="text" id="mytext" placeholder="first option">
+    <p>for second box please enter below to change it</p>
+    <input type="text" id="mytext1" placeholder="second option">
+    <script>
+    function change(){
+        var first=document.getElementById("mytext").value;
+        var second=document.getElementById("mytext1").value;
+        document.getElementById("g1").innerHTML=first;
+        document.getElementById("g2").innerHTML=second;
+        }
+    
+    </script>
+    <p>click here to change the desire option</p>
+    <button onclick="change()">click me</button>
+
+</body>
+</html>
